@@ -10,8 +10,6 @@ with open('dados.txt','r') as arquivo:
         lista2.append(int(num2))
     lista1.sort()
     lista2.sort()
-
-    res = 0
     
     distancia_total = sum(abs(item1 - item2) for item1, item2 in zip(lista1, lista2))
 
