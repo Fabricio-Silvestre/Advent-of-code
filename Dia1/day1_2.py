@@ -11,4 +11,5 @@ with open('dados.txt','r') as arquivo:
     lista1.sort()
     lista2.sort()
 
-    
+    sscore = sum((item1 * lista2.count(item1) for item1, item2 in zip(lista1, lista2)))
+    print(sscore)
